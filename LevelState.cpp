@@ -630,11 +630,13 @@ void LevelState::ResetPlayer()
 
 	//// ship creation
 	CreatePlayerShip();
-	//playerShip = SaiphApp::CloneShipFromPrototype(SaiphApp::GetShipID());
-	//playerShip->SetShield(SaiphApp::GetShieldFlyweight(SaiphApp::GetShieldID()).strength);
-	//playerShip->SetBattery(SaiphApp::GetGeneratorFlyweight(SaiphApp::GetGeneratorID()).battery);
-	//playerShip->SetPosition(BOUNDS_SIZE / 2.0f, BOUNDS_SIZE / 2.0f);
-	//playerShip->SetAfterburner(SaiphApp::GetPropulsionFlyweight(SaiphApp::GetPropulsionID()).afterburnerEnergy);
+
+	// BWash-> Used CreatePlayerShip() to replace code block below
+	/*playerShip = SaiphApp::CloneShipFromPrototype(SaiphApp::GetShipID());
+	playerShip->SetShield(SaiphApp::GetShieldFlyweight(SaiphApp::GetShieldID()).strength);
+	playerShip->SetBattery(SaiphApp::GetGeneratorFlyweight(SaiphApp::GetGeneratorID()).battery);
+	playerShip->SetPosition(BOUNDS_SIZE / 2.0f, BOUNDS_SIZE / 2.0f);
+	playerShip->SetAfterburner(SaiphApp::GetPropulsionFlyweight(SaiphApp::GetPropulsionID()).afterburnerEnergy);*/
 }
 
 void LevelState::GarbageCollect()

@@ -14,6 +14,7 @@ public:
 	void SetTargetShip(Ship* target) { _targetShip = target; }
 	void SetExecuteDelay(float executeDelay) { _executeDelay = executeDelay; }
 
+	// Pure virtual method
 	virtual void ExecuteTimeDelay() = 0 {};
 
 };
