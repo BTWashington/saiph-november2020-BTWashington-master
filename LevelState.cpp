@@ -32,8 +32,8 @@ namespace	// Global to this file only
 		source = new BaseObject();
 		ViewManager::GetInstance().AddObject(source, 5);
 		source->SetTexture("Resources/images/reticle.png");
-		source->SetDimensions(32, 32);
-		source->SetColor(0.74f, 1, 1, 1);
+		source->SetDimensions(32.0f, 32.0f);
+		source->SetColor(0.74f, 1.0f, 1.0f, 1.0f);
 		return source;
 	}
 	
