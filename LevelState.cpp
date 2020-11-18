@@ -83,7 +83,7 @@ namespace	// Global to this file only
 		int randy = rand() % 4;
 		PowerUp* powerUp = new PowerUp();
 		powerUp->SetType(randy);
-		powerUp->SetDimensions(7,7);
+		powerUp->SetDimensions(7.0f,7);
 		powerUp->SetPosition(12.0f,25.f);
 		
 		// PowerUp Options
