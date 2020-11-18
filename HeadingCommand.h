@@ -12,7 +12,7 @@ public:
 	// Mutator
 	void SetHeading(float heading) { _heading = heading; }
 
-	// override on the execute method
+	// Override on the execute method
 	void ExecuteTimeDelay() { SetHeading(_heading); };
 };
 
