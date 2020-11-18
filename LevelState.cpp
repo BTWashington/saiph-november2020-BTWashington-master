@@ -72,7 +72,7 @@ namespace	// Global to this file only
 		ViewManager::GetInstance().AddObject(Temp, 0);
 		Temp->SetTexture("Resources/images/background.png");
 		Temp->SetDimensions(32.0f, 32);
-		Temp->SetColor(0.74f, 1.0f, 1, 1);
+		Temp->SetColor(0.74f, 1.0f, 1.0f, 1);
 		Temp->SetActive(true);
 
 		return Temp;
