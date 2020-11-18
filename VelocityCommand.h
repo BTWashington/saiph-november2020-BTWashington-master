@@ -16,7 +16,7 @@ public:
     void SetHighVelocity(float highVel) { _highVelocity = highVel; }
 
     // Override Virtual ExecuteTimeDelay
-    void ExecuteTimeDelay() { SetLowVelocity(_lowVelocity), SetHighVelocity(_highVelocity); };    
+    void ExecuteTimeDelay(float _delta) {  };
     
 };
 

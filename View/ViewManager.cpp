@@ -138,3 +138,8 @@ void ViewManager::Restart(Renderer *_implementation)
 	else
 		implementation->Restart();
 }
+
+void CleanUP() {
+	delete Renderer;
+	delete Layer;
+}

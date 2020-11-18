@@ -15,7 +15,7 @@ public:
 	void SetExecuteDelay(float executeDelay) { _executeDelay = executeDelay; }
 
 	// Pure virtual method
-	virtual void ExecuteTimeDelay() = 0 {};
+	virtual void ExecuteTimeDelay(float _delta) = 0 {};
 
 };
 

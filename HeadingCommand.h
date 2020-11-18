@@ -1,5 +1,6 @@
 #pragma once
 #include "BaseCommand.h"
+#include "MotherShip.h"
 
 
 class HeadingCommand : BaseCommand
@@ -13,6 +14,6 @@ public:
 	void SetHeading(float heading) { _heading = heading; }
 
 	// Override on the execute method
-	void ExecuteTimeDelay() { SetHeading(_heading); };
+	void ExecuteTimeDelay(float _delta) {  };
 };
 
