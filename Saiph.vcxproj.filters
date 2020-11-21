@@ -75,6 +75,12 @@
     <ClCompile Include="StickyBomb.cpp">
       <Filter>Model</Filter>
     </ClCompile>
+    <ClCompile Include="Model\Behavior.cpp" />
+    <ClCompile Include="MotherShip.cpp" />
+    <ClCompile Include="BaseCommand.cpp" />
+    <ClCompile Include="HeadingCommand.cpp" />
+    <ClCompile Include="VelocityCommand.cpp" />
+    <ClCompile Include="Model\StickyBomb.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Model\BaseObject.h">
@@ -156,6 +162,14 @@
     <ClInclude Include="StickyBomb.h">
       <Filter>Model</Filter>
     </ClInclude>
+    <ClInclude Include="Model\IDeflectionStrategy.h" />
+    <ClInclude Include="MotherShip.h" />
+    <ClInclude Include="BaseCommand.h" />
+    <ClInclude Include="HeadingCommand.h" />
+    <ClInclude Include="VelocityCommand.h" />
+    <ClInclude Include="MenuState.h" />
+    <ClInclude Include="Model\StickyBomb.h" />
+    <ClInclude Include="Model\Menu.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="game.ico" />

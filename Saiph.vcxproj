@@ -179,10 +179,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BaseCommand.cpp" />
     <ClCompile Include="EntryState.cpp" />
     <ClCompile Include="ExitState.cpp" />
+    <ClCompile Include="HeadingCommand.cpp" />
     <ClCompile Include="MenuState.cpp" />
     <ClCompile Include="Model\BaseObject.cpp" />
+    <ClCompile Include="Model\Behavior.cpp" />
     <ClCompile Include="Model\Boss.cpp" />
     <ClCompile Include="Model\Bullet.cpp" />
     <ClCompile Include="Model\Deflector.cpp" />
@@ -196,12 +199,15 @@
     <ClCompile Include="Model\Ship.cpp" />
     <ClCompile Include="Model\SpawnPoint.cpp" />
     <ClCompile Include="LevelState.cpp" />
+    <ClCompile Include="Model\StickyBomb.cpp" />
+    <ClCompile Include="MotherShip.cpp" />
     <ClCompile Include="Observer.cpp" />
     <ClCompile Include="RandomFloat.cpp" />
     <ClCompile Include="SaiphApp.cpp" />
     <ClCompile Include="ShopState.cpp" />
     <ClCompile Include="StickyBomb.cpp" />
     <ClCompile Include="Subject.cpp" />
+    <ClCompile Include="VelocityCommand.cpp" />
     <ClCompile Include="View\Layer.cpp" />
     <ClCompile Include="View\ViewManager.cpp" />
     <ClCompile Include="Main.cpp">
@@ -223,8 +229,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AbstractState.h" />
+    <ClInclude Include="BaseCommand.h" />
     <ClInclude Include="EntryState.h" />
     <ClInclude Include="ExitState.h" />
+    <ClInclude Include="HeadingCommand.h" />
+    <ClInclude Include="MenuState.h" />
     <ClInclude Include="Model\BaseObject.h" />
     <ClInclude Include="Model\Boss.h" />
     <ClInclude Include="Model\Bullet.h" />
@@ -232,11 +241,15 @@
     <ClInclude Include="Model\Effect.h" />
     <ClInclude Include="Model\Enemy.h" />
     <ClInclude Include="Model\HUD.h" />
+    <ClInclude Include="Model\IDeflectionStrategy.h" />
+    <ClInclude Include="Model\Menu.h" />
     <ClInclude Include="Model\MovingObject.h" />
     <ClInclude Include="Model\PowerUp.h" />
     <ClInclude Include="Model\ProgressBar.h" />
     <ClInclude Include="Model\Ship.h" />
     <ClInclude Include="Model\SpawnPoint.h" />
+    <ClInclude Include="Model\StickyBomb.h" />
+    <ClInclude Include="MotherShip.h" />
     <ClInclude Include="Observer.h" />
     <ClInclude Include="RandomFloat.h" />
     <ClInclude Include="SaiphApp.h" />
@@ -246,6 +259,7 @@
     </ClInclude>
     <ClInclude Include="StickyBomb.h" />
     <ClInclude Include="Subject.h" />
+    <ClInclude Include="VelocityCommand.h" />
     <ClInclude Include="View\Layer.h" />
     <ClInclude Include="View\ViewManager.h" />
     <ClInclude Include="LevelState.h" />
