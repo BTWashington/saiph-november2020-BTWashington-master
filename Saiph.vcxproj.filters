@@ -66,36 +66,13 @@
       <Filter>Model</Filter>
     </ClCompile>
     <ClCompile Include="Model\Deflector.cpp" />
-    <ClCompile Include="Model\LoadEnemyPrototypes.cpp" />
-    <ClCompile Include="Model\Behavior.cpp" />
-    <ClCompile Include="Model\StickyBomb.cpp" />
-    <ClCompile Include="UnitTest++\AssertException.cpp" />
-    <ClCompile Include="UnitTest++\Checks.cpp" />
-    <ClCompile Include="UnitTest++\CurrentTest.cpp" />
-    <ClCompile Include="UnitTest++\DeferredTestReporter.cpp" />
-    <ClCompile Include="UnitTest++\DeferredTestResult.cpp" />
-    <ClCompile Include="UnitTest++\MemoryOutStream.cpp" />
-    <ClCompile Include="UnitTest++\ReportAssert.cpp" />
-    <ClCompile Include="UnitTest++\Test.cpp" />
-    <ClCompile Include="UnitTest++\TestDetails.cpp" />
-    <ClCompile Include="UnitTest++\TestList.cpp" />
-    <ClCompile Include="UnitTest++\TestReporter.cpp" />
-    <ClCompile Include="UnitTest++\TestReporterStdout.cpp" />
-    <ClCompile Include="UnitTest++\TestResults.cpp" />
-    <ClCompile Include="UnitTest++\TestRunner.cpp" />
-    <ClCompile Include="UnitTest++\TimeConstraint.cpp" />
-    <ClCompile Include="UnitTest++\TimeHelpers.cpp" />
-    <ClCompile Include="UnitTest++\XmlTestReporter.cpp" />
-    <ClCompile Include="UnitTester\Main.cpp" />
-    <ClCompile Include="UnitTester\SubShopState.cpp" />
-    <ClCompile Include="UnitTester\TestBaseObject.cpp" />
-    <ClCompile Include="UnitTester\TestEffect.cpp" />
-    <ClCompile Include="UnitTester\TestEnemy.cpp" />
-    <ClCompile Include="UnitTester\TestExitState.cpp" />
-    <ClCompile Include="UnitTester\TestLevelState.cpp" />
-    <ClCompile Include="UnitTester\TestPowerUp.cpp" />
-    <ClCompile Include="UnitTester\TestMovingObject.cpp" />
-    <ClCompile Include="UnitTester\TestShopState.cpp" />
+    <ClCompile Include="Observer.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Subject.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="StickyBomb.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Model\BaseObject.h">
@@ -165,183 +142,30 @@
     </ClInclude>
     <ClInclude Include="ShopState.h" />
     <ClInclude Include="stdafx.h" />
-    <ClInclude Include="Model\Menu.h" />
     <ClInclude Include="Model\Deflector.h" />
-    <ClInclude Include="Model\IDeflectionStrategy.h" />
-    <ClInclude Include="Model\StickyBomb.h" />
-    <ClInclude Include="MenuState.h" />
     <ClInclude Include="RandomFloat.h" />
     <ClInclude Include="SaiphApp.h" />
-    <ClInclude Include="StopWatch.h" />
-    <ClInclude Include="UnitTest++\AssertException.h" />
-    <ClInclude Include="UnitTest++\CheckMacros.h" />
-    <ClInclude Include="UnitTest++\Checks.h" />
-    <ClInclude Include="UnitTest++\Config.h" />
-    <ClInclude Include="UnitTest++\CurrentTest.h" />
-    <ClInclude Include="UnitTest++\DeferredTestReporter.h" />
-    <ClInclude Include="UnitTest++\DeferredTestResult.h" />
-    <ClInclude Include="UnitTest++\ExecuteTest.h" />
-    <ClInclude Include="UnitTest++\MemoryOutStream.h" />
-    <ClInclude Include="UnitTest++\ReportAssert.h" />
-    <ClInclude Include="UnitTest++\Test.h" />
-    <ClInclude Include="UnitTest++\TestDetails.h" />
-    <ClInclude Include="UnitTest++\TestList.h" />
-    <ClInclude Include="UnitTest++\TestSuite.h" />
-    <ClInclude Include="UnitTest++\TestMacros.h" />
-    <ClInclude Include="UnitTest++\TestReporter.h" />
-    <ClInclude Include="UnitTest++\TestResults.h" />
-    <ClInclude Include="UnitTest++\TestReporterStdout.h" />
-    <ClInclude Include="UnitTest++\TestRunner.h" />
-    <ClInclude Include="UnitTest++\TimeConstraint.h" />
-    <ClInclude Include="UnitTest++\TimeHelpers.h" />
-    <ClInclude Include="UnitTest++\UnitTest++.h" />
-    <ClInclude Include="UnitTest++\XmlTestReporter.h" />
-    <ClInclude Include="View\CommonStates.h" />
-    <ClInclude Include="View\DirectXRenderer.h" />
-    <ClInclude Include="View\OpenGLRenderer.h" />
-    <ClInclude Include="View\OpenGLTextureManager.h" />
-    <ClInclude Include="View\Renderer.h" />
-    <ClInclude Include="View\SpriteBatch.h" />
-    <ClInclude Include="View\SpriteFont.h" />
-    <ClInclude Include="UnitTester\Defines.h" />
-    <ClInclude Include="UnitTester\ShopState.h" />
-    <ClInclude Include="UnitTester\SubShopState.h" />
-    <ClInclude Include="UnitTester\Bugs.h" />
+    <ClInclude Include="Observer.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Subject.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="StickyBomb.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="game.ico" />
     <None Include=".gitignore" />
-    <None Include="Debug\UnitTester.pdb" />
-    <None Include="Debug\vc142.idb" />
-    <None Include="Debug\vc142.pdb" />
-    <None Include="Resources\tahoma.spritefont" />
-    <None Include="UnitTester\Debug\AssertException.sbr" />
-    <None Include="UnitTester\Debug\Checks.sbr" />
-    <None Include="UnitTester\Debug\CurrentTest.sbr" />
-    <None Include="UnitTester\Debug\DeferredTestReporter.sbr" />
-    <None Include="UnitTester\Debug\DeferredTestResult.sbr" />
-    <None Include="UnitTester\Debug\Main.sbr" />
-    <None Include="UnitTester\Debug\MemoryOutStream.sbr" />
-    <None Include="UnitTester\Debug\ReportAssert.sbr" />
-    <None Include="UnitTester\Debug\Test.sbr" />
-    <None Include="UnitTester\Debug\TimeHelpers.sbr" />
-    <None Include="UnitTester\Debug\TimeConstraint.sbr" />
-    <None Include="UnitTester\Debug\TestRunner.sbr" />
-    <None Include="UnitTester\Debug\TestResults.sbr" />
-    <None Include="UnitTester\Debug\TestReporterStdout.sbr" />
-    <None Include="UnitTester\Debug\TestReporter.sbr" />
-    <None Include="UnitTester\Debug\TestPowerUp.sbr" />
-    <None Include="UnitTester\Debug\TestMovingObject.sbr" />
-    <None Include="UnitTester\Debug\TestList.sbr" />
-    <None Include="UnitTester\Debug\TestEnemy.sbr" />
-    <None Include="UnitTester\Debug\TestEffect.sbr" />
-    <None Include="UnitTester\Debug\TestDetails.sbr" />
-    <None Include="UnitTester\Debug\vc142.idb" />
-    <None Include="UnitTester\Debug\vc142.pdb" />
-    <None Include="UnitTester\Debug\XmlTestReporter.sbr" />
-    <None Include="UnitTester\CreateMain.exe" />
-    <None Include="ExampleBugs.exe" />
-    <None Include="ExampleDeflector.exe" />
-    <None Include="ExampleFactory.exe" />
-    <None Include="ExampleObserver.exe" />
-    <None Include="ExampleRefactor.exe" />
-    <None Include="ExampleShadows.exe" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Saiph.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Library Include="GlAux.Lib" />
-    <Library Include="Library_Debug_Win32.lib" />
-    <Library Include="Library_Release_Win32.lib" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="Saiph Gameplay Instructions.txt" />
-    <Text Include="Debug\Saiph.Build.CppClean.log" />
-    <Text Include="Debug\Saiph.log" />
-    <Text Include="Debug\Saiph.vcxproj.FileListAbsolute.txt" />
-    <Text Include="UnitTester\Debug\UnitTester.Build.CppClean.log" />
-    <Text Include="UnitTester\Debug\UnitTester.log" />
-    <Text Include="UnitTester\Debug\UnitTester.vcxproj.FileListAbsolute.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <Xml Include="Resources\anims.xml" />
-    <Xml Include="Resources\config.xml" />
-    <Xml Include="Resources\enemyPrototypes.xml" />
-    <Xml Include="Resources\entry.xml" />
-    <Xml Include="Resources\exampleEnemyPrototypes.xml" />
-    <Xml Include="Resources\exampleLevel0.xml" />
-    <Xml Include="Resources\flyweights.xml" />
-    <Xml Include="Resources\level0.xml" />
-    <Xml Include="Resources\level1.xml" />
-    <Xml Include="Resources\shipPrototypes.xml" />
-    <Xml Include="Resources\shop.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Object Include="UnitTester\Debug\AssertException.obj" />
-    <Object Include="UnitTester\Debug\Checks.obj" />
-    <Object Include="UnitTester\Debug\CurrentTest.obj" />
-    <Object Include="UnitTester\Debug\DeferredTestReporter.obj" />
-    <Object Include="UnitTester\Debug\DeferredTestResult.obj" />
-    <Object Include="UnitTester\Debug\Main.obj" />
-    <Object Include="UnitTester\Debug\ReportAssert.obj" />
-    <Object Include="UnitTester\Debug\MemoryOutStream.obj" />
-    <Object Include="UnitTester\Debug\Test.obj" />
-    <Object Include="UnitTester\Debug\TestBaseObject.obj" />
-    <Object Include="UnitTester\Debug\TimeHelpers.obj" />
-    <Object Include="UnitTester\Debug\TimeConstraint.obj" />
-    <Object Include="UnitTester\Debug\TestRunner.obj" />
-    <Object Include="UnitTester\Debug\TestResults.obj" />
-    <Object Include="UnitTester\Debug\TestReporterStdout.obj" />
-    <Object Include="UnitTester\Debug\TestReporter.obj" />
-    <Object Include="UnitTester\Debug\TestPowerUp.obj" />
-    <Object Include="UnitTester\Debug\TestMovingObject.obj" />
-    <Object Include="UnitTester\Debug\TestList.obj" />
-    <Object Include="UnitTester\Debug\TestEnemy.obj" />
-    <Object Include="UnitTester\Debug\TestEffect.obj" />
-    <Object Include="UnitTester\Debug\TestDetails.obj" />
-    <Object Include="UnitTester\Debug\XmlTestReporter.obj" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="Resources\images\arrow.png" />
     <Image Include="Resources\images\background.png" />
-    <Image Include="Resources\images\boss1.png" />
-    <Image Include="Resources\images\boss2.png" />
-    <Image Include="Resources\images\boss3.png" />
-    <Image Include="Resources\images\boss4.png" />
-    <Image Include="Resources\images\bullet2.png" />
-    <Image Include="Resources\images\bullet1.png" />
-    <Image Include="Resources\images\bullet3.png" />
-    <Image Include="Resources\images\emptyroundedbox.png" />
-    <Image Include="Resources\images\circle.png" />
-    <Image Include="Resources\images\emptysquare.png" />
     <Image Include="Resources\images\enemy1.png" />
-    <Image Include="Resources\images\hud.png" />
-    <Image Include="Resources\images\intro.png" />
-    <Image Include="Resources\images\menubox.png" />
-    <Image Include="Resources\images\missile1.png" />
-    <Image Include="Resources\images\missile2.png" />
-    <Image Include="Resources\images\missile3.png" />
-    <Image Include="Resources\images\missile4.png" />
-    <Image Include="Resources\images\progressBar1.png" />
-    <Image Include="Resources\images\progressBar2.png" />
     <Image Include="Resources\images\puparmor.png" />
     <Image Include="Resources\images\pupenergy.png" />
     <Image Include="Resources\images\pupscore.png" />
     <Image Include="Resources\images\pupweapon.png" />
-    <Image Include="Resources\images\selector.png" />
-    <Image Include="Resources\images\saiph.png" />
-    <Image Include="Resources\images\reticle.png" />
-    <Image Include="Resources\images\ship1.png" />
-    <Image Include="Resources\images\ship2.png" />
-    <Image Include="Resources\images\ship3.png" />
-    <Image Include="Resources\images\ship4.png" />
-    <Image Include="Resources\images\ship5.png" />
-    <Image Include="Resources\images\skull.png" />
-    <Image Include="Resources\images\square.png" />
-    <Image Include="Resources\images\target.png" />
-    <Image Include="Resources\images\tile_circle.png" />
-    <Image Include="Resources\images\whitebox.bmp" />
-    <Image Include="Resources\images\whitebox.png" />
   </ItemGroup>
 </Project>
