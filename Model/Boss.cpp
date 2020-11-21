@@ -60,4 +60,6 @@ void Boss::Heartbeat(float _delta)
 		GetShip()->SetBattery(SaiphApp::GetGeneratorFlyweight(GetGeneratorID()).battery);
 
 	// TODO: insert your behavior algorithm code here
+	// I was unable to finish my Algorithm.  I enjoyed working through this piece of software though  this month. 
+	// First time I was ever able to really get my hands dirty so to speak.  
 }
