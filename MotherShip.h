@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Ship.h"
+#include "BaseCommand.h"
 
 
 
@@ -9,9 +10,16 @@ class MotherShip :
 {
     // Constructor -> Overloaded
     MotherShip(const Ship&):Ship:: {}
-    ~MotherShip() {};
+    // Destructor
+    ~MotherShip() {
+        ~ViewManager();
+
+    };
+    // Assignment Operator
+
     // Vector of ship pointers to the MotherShip class
     std::vector<Ship*> MotherFleet;
+    std::vector<BaseCommand*> BseCmd;
 
 public:
     // Public method for adding a passed in "shadow"(ship) pointer to this container
@@ -21,6 +29,7 @@ public:
         MotherFleet.push_back(shadow);
     };
 
+    // Heatbeat "update" method
     void Heartbeat(float _delta);
 
 };

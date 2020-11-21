@@ -94,11 +94,11 @@ public:
 	void Init();									// This method initializes the game entities
 	void RenderFrame() const;						// This method renders all entities to the drawing context
 	void Shutdown();								// This method does any necessary clean-up
-	BaseObject* CreateMouseCursor(BaseObject* object);
-	HUD* CreateHUD();
-	ProgressBar* CreateProgressBar();
-	Ship* CreatePlayerShip();
-	BaseObject* CreateBackGround();
+	BaseObject* CreateMouseCursor(BaseObject* object); // Creates Mouse Cursor
+	HUD* CreateHUD(); // Creates HUD
+	ProgressBar* CreateProgressBar();  // Creates Progress Bar
+	Ship* CreatePlayerShip(); // Creates PlayerShip
+	BaseObject* CreateBackGround();  // Create BackGround
 	//////////////////////
 };
 
