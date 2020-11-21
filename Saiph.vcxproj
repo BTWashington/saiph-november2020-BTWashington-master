@@ -196,9 +196,12 @@
     <ClCompile Include="Model\Ship.cpp" />
     <ClCompile Include="Model\SpawnPoint.cpp" />
     <ClCompile Include="LevelState.cpp" />
+    <ClCompile Include="Observer.cpp" />
     <ClCompile Include="RandomFloat.cpp" />
     <ClCompile Include="SaiphApp.cpp" />
     <ClCompile Include="ShopState.cpp" />
+    <ClCompile Include="StickyBomb.cpp" />
+    <ClCompile Include="Subject.cpp" />
     <ClCompile Include="View\Layer.cpp" />
     <ClCompile Include="View\ViewManager.cpp" />
     <ClCompile Include="Main.cpp">
@@ -234,12 +237,15 @@
     <ClInclude Include="Model\ProgressBar.h" />
     <ClInclude Include="Model\Ship.h" />
     <ClInclude Include="Model\SpawnPoint.h" />
+    <ClInclude Include="Observer.h" />
     <ClInclude Include="RandomFloat.h" />
     <ClInclude Include="SaiphApp.h" />
     <ClInclude Include="ShopState.h" />
     <ClInclude Include="stdafx.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
     </ClInclude>
+    <ClInclude Include="StickyBomb.h" />
+    <ClInclude Include="Subject.h" />
     <ClInclude Include="View\Layer.h" />
     <ClInclude Include="View\ViewManager.h" />
     <ClInclude Include="LevelState.h" />

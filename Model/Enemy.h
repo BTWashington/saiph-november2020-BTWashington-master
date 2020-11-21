@@ -4,12 +4,17 @@
 // Created April 17, 2008
 // Last updated September 18, 2008
 // 
+#include"Subject.h"
 #ifndef ENEMY_H
 #define ENEMY_H
 
+
+
 class Ship;
 
-class Enemy
+class Enemy :
+	public Subject
+	
 {
 	bool tempBehavior;				// true = temporary behavior is in use, false = initial behavior
 	bool fireReady;					// The enemy is ready to fire
