@@ -72,7 +72,9 @@
     <ClCompile Include="Subject.cpp">
       <Filter>Model</Filter>
     </ClCompile>
-    <ClCompile Include="StickyBomb.cpp" />
+    <ClCompile Include="StickyBomb.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Model\BaseObject.h">
@@ -151,7 +153,9 @@
     <ClInclude Include="Subject.h">
       <Filter>Model</Filter>
     </ClInclude>
-    <ClInclude Include="StickyBomb.h" />
+    <ClInclude Include="StickyBomb.h">
+      <Filter>Model</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="game.ico" />
